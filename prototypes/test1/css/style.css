@@ -1,0 +1,74 @@
+body {
+    --color-body-backround: rgb(0 255 0 / .5);
+}
+
+body {
+    background-color: var(--color-body-backround);
+}
+
+/* GLOBAL RESETS */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* GENERAL LAYOUT OF STUFF */
+.site-wrapper {
+    background-color: pink;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer'
+    ;
+    grid-template-rows: auto 1fr auto;
+}
+
+.site-header {
+    grid-area: header;
+    background-color: teal;
+}
+
+.site-main {
+    grid-area: main;
+    background-color: tomato;
+}
+
+.site-footer {
+    grid-area: footer;
+    background-color: orange;
+}
+
+/* SECTIONS */
+
+section {
+    min-height: 100vh;
+}
+
+/* Student Cards */
+
+.studentcards,
+.studentcards li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.studentcards {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.studentcards li {
+    background: purple;
+}
