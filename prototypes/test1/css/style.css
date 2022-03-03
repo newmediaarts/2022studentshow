@@ -1,9 +1,12 @@
 body {
     --color-body-backround: rgb(0 255 0 / .5);
+    --font-sans: 'Acumin', sans-serif;
+    --font-serif: 'Times New Roman', serif
 }
 
 body {
     background-color: var(--color-body-backround);
+    font-family: var(--font-sans);
 }
 
 /* GLOBAL RESETS */
@@ -19,6 +22,11 @@ body {
     margin: 0;
 }
 
+/* SECTIONS */
+
+section {
+    min-height: 100vh;
+}
 
 /* GENERAL LAYOUT OF STUFF */
 .site-wrapper {
@@ -36,6 +44,9 @@ body {
 .site-header {
     grid-area: header;
     background-color: teal;
+    width: 50vw;
+    margin: 0 auto;
+    /* Not Exactly what I want */
 }
 
 .site-main {
@@ -48,11 +59,30 @@ body {
     background-color: orange;
 }
 
-/* SECTIONS */
-
-section {
-    min-height: 100vh;
+/* NAVIGATION */
+.site-header ul{
+    display: flex;
+    justify-content:space-between;
+    padding: 0;
 }
+
+
+.site-header li{
+    list-style: none;
+    padding: 0 1em;
+    
+}
+
+.site-header a{
+    color: black;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero{
+    
+}
+
 
 /* Student Cards */
 
@@ -67,8 +97,11 @@ section {
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
 }
 
 .studentcards li {
     background: purple;
+    border: 2px solid black;
+    
 }
