@@ -2,4 +2,4 @@
 *.config
 
 # mac general
-.DS_Store
+*.DS_Store
