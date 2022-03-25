@@ -2,7 +2,7 @@ body {
     --color-body-backround: rgb(0 0 0 / 1);
     --color-body-text: rgb(255 255 255 / .8);
     --color-body-text-hover: rgb(255 255 255 / 1);
-    --font-sans: 'Acumin', sans-serif;
+    --font-sans: 'degular', 'Acumin', sans-serif;
     --font-serif: 'Times New Roman', serif;
     --spacing-unit: 1rem;
 }
