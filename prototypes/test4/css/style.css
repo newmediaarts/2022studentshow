@@ -398,39 +398,6 @@ section {
   height: auto
 }
 
-
-/* ul#countdown {
-  position: relative;
-  margin: 0 auto;
-  padding: 80px 20px;
-  color: #fff;
-  overflow: hidden;
-  font-family: var(--font-sans);
-  font-weight: bold;
-}
-
-ul#countdown li {
-  margin: 0 20px;
-  padding: 70px;
-  display: inline-block;
-  width: 20%;
-  font-size: 72px;
-  font-size: 6vw;
-  text-align: center;
-  border-radius: 250px;
-  border: 1px solid white;
-}
-
-ul#countdown li .label {
-  color: #adafb2;
-  font-size: 18px;
-  font-size: 1.5vw;
-  text-transform: uppercase;
-} */
-
-
-
-
 .time_circles {
   position: relative;
   width: 100%;
