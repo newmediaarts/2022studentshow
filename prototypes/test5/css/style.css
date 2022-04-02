@@ -85,6 +85,11 @@ h1, h2, h3, p {
   max-width: 750px;
 }
 
+span {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+}
+
 /* TYPE UTILITY CLASSES */
 .woodland-ultralight,
 .woodland-light,
@@ -394,8 +399,53 @@ section {
   margin-bottom: 30px;
 }
 
+#details h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
 #details section {
   height: auto;
+}
+
+.time_circles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.time_circles>div {
+  position: absolute;
+  text-align: center
+}
+
+.time_circles>div>h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-sans);
+}
+
+.time_circles>div>span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 300%;
+  margin-top: .4em;
+  color: #444;
+}
+
+
+
+#DateCountdown {
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+
+#details h3 {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .time_circles {
@@ -423,5 +473,80 @@ section {
   font-family: var(--font-sans);
   font-size: 300%;
   margin-top: .4em;
-  color: #444;
+  color: #fff;
+
+}
+
+/* 
+@media (max-width: 768px) {
+  #DateCountdown {
+    border: 1px solid red;
+  }
+} */
+
+
+body {
+  background-image: radial-gradient(circle at 1.76% 2.76%,
+      #0c1b28,
+      transparent 80%),
+    radial-gradient(circle at 99.3% 98.84%, #dd9b5a, transparent 50%),
+    radial-gradient(circle at 64.52% 46.01%, #427989, transparent 52%),
+    radial-gradient(circle at 28.96% 80.99%, #427989, transparent 100%),
+    radial-gradient(circle at 63.73% 13.79%, #127541, transparent 54%),
+    radial-gradient(circle at 92.61% 59.22%, #f1ce79, transparent 35%),
+    radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+  background-attachment: fixed;
+}
+
+body {
+  background-color: rgb(0 0 0 / 1);
+  color: rgb(255 255 255 / 0.8);
+}
+
+.hero {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.hero h1 {
+  font-size: 8vw;
+  line-height: 1;
+  font-weight: normal;
+}
+
+/* TYOPGRAPHIC MAP */
+.topographic-map-pattern {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.topographic-map-pattern svg {
+  width: 100%;
+  height: 100%;
+}
+
+.topographic-map-pattern svg path {
+  fill: rgb(255 255 255 / .2);
+}
+
+/* SECTIONS */
+header, footer {
+  padding: 1em;
+  text-align: center;
+}
+
+/* RESETS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
