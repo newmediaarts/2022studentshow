@@ -397,7 +397,7 @@ section {
 /* Details: Countdown */
 #details {
   /* width: 80%; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #DateCountdown {
@@ -405,7 +405,6 @@ section {
 }
 
 #details h3 {
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -450,7 +449,6 @@ section {
 }
 
 #details h3 {
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -517,19 +515,31 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  /* width: 100%; */
+  text-align: center;
 }
 
-.hero {
-  min-height: 60vh;
-  display: grid;
-  place-items: center;
-}
 
-.hero h1 {
-  font-size: 8vw;
+.hero-comingsoon h1 {
+  font-size: 7em;
+  font-size: 7.25vw;
+  font-size: clamp(2em,7.25vw,7em);
   line-height: 1;
   font-weight: normal;
+}
+
+.hero-comingsoon h2,
+.hero-comingsoon h3 {
+  font-size: 1em;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.badge {
+  background-color: pink;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  padding: 1em;
 }
 
 /* TYOPGRAPHIC MAP */
