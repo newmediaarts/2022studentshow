@@ -395,20 +395,21 @@ section {
 
 
 /* Details: Countdown */
-#details {
-  /* width: 80%; */
-  /* border: 1px solid red; */
-}
+
 
 #DateCountdown {
   margin-bottom: 30px;
 }
 
-#details h3 {
+.details h3 {
+  font-family: 'woodland', Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: clamp(1.5em,2.25vw,3em);
   margin: 0 auto;
 }
 
-#details section {
+.details section {
   height: auto;
 }
 
@@ -448,9 +449,6 @@ section {
   /* width: 100%; */
 }
 
-#details h3 {
-  margin: 0 auto;
-}
 
 .time_circles {
   position: relative;
@@ -508,8 +506,7 @@ body {
 }
 
 .comingsoon-wrapper {
-  border: 1px solid red;
-  background: rgb(255 0 0 /.2);
+  /* background: rgb(255 0 0 /.2); */
   height: 100%;
   padding: 5%;
   display: grid;
@@ -520,26 +517,35 @@ body {
 
 
 .hero-comingsoon h1 {
-  font-size: 7em;
-  font-size: 7.25vw;
-  font-size: clamp(2em,7.25vw,7em);
+  /* font-size: 7em;
+  font-size: 7.25vw; */
+  font-size: clamp(3em,7.25vw,6em);
   line-height: 1;
   font-weight: normal;
+}
+
+.hero-comingsoon h2{
+  font-size: 1.6em;
+}
+
+.hero-comingsoon h3{
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .hero-comingsoon h2,
 .hero-comingsoon h3 {
-  font-size: 1em;
-  line-height: 1;
+  text-align: left;
+  line-height: .75;
   font-weight: normal;
 }
 
 .badge {
-  background-color: pink;
+  background-color: teal;
   position: absolute;
   top: 5%;
   left: 0;
-  padding: 1em;
+  padding: 1em 1.5em;
 }
 
 /* TYOPGRAPHIC MAP */
