@@ -405,7 +405,7 @@ section {
   font-family: 'woodland', Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   font-style: normal;
-  font-size: clamp(1.5em,2.25vw,3em);
+  font-size: clamp(1.5em, 2.25vw, 3em);
   margin: 0 auto;
 }
 
@@ -513,22 +513,23 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
+  background-image: url(/prototypes/test6/img/topographic-lines-map.svg);
 }
 
 
 .hero-comingsoon h1 {
   /* font-size: 7em;
   font-size: 7.25vw; */
-  font-size: clamp(3em,7.25vw,6em);
+  font-size: clamp(3em, 7.25vw, 6em);
   line-height: 1;
   font-weight: normal;
 }
 
-.hero-comingsoon h2{
+.hero-comingsoon h2 {
   font-size: 1.6em;
 }
 
-.hero-comingsoon h3{
+.hero-comingsoon h3 {
   font-size: 1em;
   text-transform: uppercase;
 }
@@ -546,6 +547,22 @@ body {
   top: 5%;
   left: 0;
   padding: 1em 1.5em;
+}
+
+.badge2 {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  padding: 1em 1.5em;
+  text-align: right;
+}
+
+.badge2 h2 {
+  font-size: 2em;
+}
+
+.badge2 h3 {
+  font-size: 1.5em;
 }
 
 /* TYOPGRAPHIC MAP */
