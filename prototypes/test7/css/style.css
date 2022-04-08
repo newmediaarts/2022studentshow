@@ -446,7 +446,7 @@ section {
 #DateCountdown {
   margin-bottom: 30px;
   margin: 0 auto;
-  /* width: 100%; */
+  width: 100%;
 }
 
 
@@ -513,7 +513,6 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
-  background-image: url(/prototypes/test6/img/topographic-lines-map.svg);
   background-repeat: no-repeat;
 }
 
@@ -559,10 +558,6 @@ body {
 }
 
 .badge2 h2 {
-  font-size: 2em;
-}
-
-.badge2 h3 {
   font-size: 1.5em;
 }
 
@@ -574,10 +569,17 @@ body {
   left: 0;
   width: 100%;
   z-index: -1;
-  background-image: url(../img/topographic-lines-map.svg);
   background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
+
+.topographic-map-pattern img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* SECTIONS */
 header, footer {
