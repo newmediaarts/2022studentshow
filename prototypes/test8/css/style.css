@@ -401,7 +401,7 @@ section {
   margin-bottom: 30px;
 }
 
-.details h3 {
+#details h3 {
   font-family: 'woodland', Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   font-style: normal;
@@ -409,7 +409,9 @@ section {
   margin: 0 auto;
 }
 
-.details sectio
+#details sup {
+  font-size: .6em;
+}
 
 /* Details: Countdown */
 #DateCountdown {
@@ -419,6 +421,12 @@ section {
 #details h3 {
   text-align: center;
   margin: 0 auto;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 #details section {
@@ -531,14 +539,29 @@ body {
   background-repeat: no-repeat;
 }
 
+.hero-comingsoon p {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
 
 .hero-comingsoon h1 {
   /* font-size: 7em;
   font-size: 7.25vw; */
   font-size: clamp(3em, 7.25vw, 6em);
-  line-height: 1;
+  line-height: .8;
   font-weight: normal;
   /* max-width: 40vw; */
+  margin: 0.5em 0 0.1em 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @media (min-width:768px) {
@@ -567,6 +590,8 @@ body {
   line-height: .75;
   font-weight: normal;
 }
+
+
 
 .badge {
   background-color: teal;
@@ -657,4 +682,10 @@ span {
 
 .socialmedia a:hover svg {
   fill: rgb(255 255 255 / 1);
+}
+
+/* ANIMATION */
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
