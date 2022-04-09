@@ -1,0 +1,660 @@
+body {
+  --color-body-backround: rgb(0 0 0 / 1);
+  --color-body-text: rgb(255 255 255 / .8);
+  --color-body-text-hover: rgb(255 255 255 / 1);
+  --font-sans: 'degular', 'Acumin', sans-serif;
+  --font-serif: 'Times New Roman', serif;
+  --spacing-unit: 1rem;
+}
+
+/* GLOBAL RESETS */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* GLOBAL STYLING */
+
+body {
+  background-color: var(--color-body-backround);
+  font-family: var(--font-sans);
+  color: var(--color-body-text);
+}
+
+a {
+  color: var(--color-body-text);
+}
+
+a:hover {
+  color: var(--color-body-text-hover);
+}
+
+/* TYPOGRAPHY */
+
+body {
+  font-family: degular, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  margin: .3em 0;
+}
+
+
+h1 {
+  font-family: 'woodland', Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.25em;
+  /* font-size: 6vw;
+    font-size: clamp(2em, 3vw + 3vh, 4em); */
+  line-height: 1;
+}
+
+h2 {
+  font-family: degular, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.625em;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: degular, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625em;
+  line-height: 1.2;
+}
+
+.runninghead {
+  font-family: degular, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625em;
+  line-height: 1.2;
+}
+
+h1, h2, h3, p {
+  max-width: 750px;
+}
+
+span {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+}
+
+/* TYPE UTILITY CLASSES */
+.woodland-ultralight,
+.woodland-light,
+.woodland,
+.woodland-medium,
+.woodland-bold,
+.woodland-heavy {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.woodland-ultralight {
+  font-family: 'woodland-ultralight', Georgia, 'Times New Roman', Times, serif;
+}
+
+.woodland-light {
+  font-family: 'woodland-light', Georgia, 'Times New Roman', Times, serif;
+}
+
+.woodland {
+  font-family: 'woodland', Georgia, 'Times New Roman', Times, serif;
+}
+
+.woodland-medium {
+  font-family: 'woodland-medium', Georgia, 'Times New Roman', Times, serif;
+}
+
+.woodland-bold {
+  font-family: 'woodland-bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.woodland-heavy {
+  font-family: 'woodland-heavy', Georgia, 'Times New Roman', Times, serif;
+}
+
+.degular,
+.degular-italic,
+.degular-medium,
+.degular-mediumitalic,
+.degular-thin,
+.degular-light,
+.degular-medium,
+.degular-semibold,
+.degular-black {
+  font-family: degular, Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+
+.degular-thin {
+  font-weight: 200;
+}
+
+.degular-thin-italic {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.degular-light {
+  font-weight: 300;
+}
+
+.degular-light-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.degular {
+  font-weight: 400;
+}
+
+.degular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.degular-medium {
+  font-weight: 500;
+}
+
+.degular-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.degular-semibold {
+  font-weight: 600;
+}
+
+.degular-semibold-italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.degular-bold {
+  font-weight: 700;
+}
+
+.degular-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.degular-black {
+  font-weight: 800;
+}
+
+.degular-black-italic {
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+
+/* SECTIONS */
+
+/* section {
+    min-height: 100vh;
+} */
+
+/* GENERAL LAYOUT OF STUFF */
+.site-wrapper {
+  /* background-color: pink; */
+  min-height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer'
+  ;
+  grid-template-rows: auto 1fr auto;
+}
+
+.site-header {
+  grid-area: header;
+  /* background-color: teal; */
+  width: 50vw;
+  margin: 0 auto;
+  /* Not Exactly what I want */
+}
+
+.site-main {
+  grid-area: main;
+  /* background-color: tomato; */
+}
+
+.site-footer {
+  grid-area: footer;
+  /* background-color: orange; */
+}
+
+/* NAVIGATION */
+.site-header ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+.site-header li {
+  list-style: none;
+  padding: 0 var(--spacing-unit);
+
+}
+
+.site-header a {
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  padding: var(--spacing-unit);
+}
+
+/* HERO */
+.hero {
+  grid-area: hero;
+  display: grid;
+  place-items: center;
+  padding: var(--spacing-unit);
+}
+
+.hero h1 {
+  font-size: 7vw;
+  line-height: 1;
+}
+
+
+/* Student Cards */
+
+/* .studentcards,
+.studentcards li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} */
+
+/* .studentcards {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+
+} */
+
+/* .studentcards li {
+    background: purple;
+    border: 2px solid black;
+    
+} */
+
+/* https://stackoverflow.com/questions/20456694/grid-of-responsive-squares */
+.tile {
+  background-color: purple;
+  float: left;
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  margin: 1.66%;
+}
+
+.student {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+}
+
+.bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url('https://picsum.photos/600/1200?random=1');
+}
+
+/* VIDEO WRAPPER */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* WEB FONTS */
+
+@font-face {
+  font-family: 'woodland';
+  src: url('../fonts/woodland/PPWoodland-Regular.eot');
+  src: url('../fonts/woodland/PPWoodland-Regular.eot?iefix') format('eot'),
+    url('../fonts/woodland/PPWoodland-Regular.woff') format('woff'),
+    url('../fonts/woodland/PPWoodland-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'woodland-ultralight';
+  src: url('../fonts/woodland/PPWoodland-Ultralight.eot');
+  src: url('../fonts/woodland/PPWoodland-Ultralight.eot?iefix') format('eot'),
+    url('../fonts/woodland/PPWoodland-Ultralight.woff') format('woff'),
+    url('../fonts/woodland/PPWoodland-Ultralight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'woodland-light';
+  src: url('../fonts/woodland/PPWoodland-Light.eot');
+  src: url('../fonts/woodland/PPWoodland-Light.eot?iefix') format('eot'),
+    url('../fonts/woodland/PPWoodland-Light.woff') format('woff'),
+    url('../fonts/woodland/PPWoodland-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'woodland-medium';
+  src: url('../fonts/woodland/PPWoodland-Medium.eot');
+  src: url('../fonts/woodland/PPWoodland-Medium.eot?iefix') format('eot'),
+    url('../fonts/woodland/PPWoodland-Medium.woff') format('woff'),
+    url('../fonts/woodland/PPWoodland-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'woodland-bold';
+  src: url('../fonts/woodland/PPWoodland-Bold.eot');
+  src: url('../fonts/woodland/PPWoodland-Bold.eot?iefix') format('eot'),
+    url('../fonts/woodland/PPWoodland-Bold.woff') format('woff'),
+    url('../fonts/woodland/PPWoodland-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'woodland-heavy';
+  src: url('../fonts/woodland/PPWoodland-Heavy.eot');
+  src: url('../fonts/woodland/PPWoodland-Heavy.eot?iefix') format('eot'),
+    url('../fonts/woodland/PPWoodland-Heavy.woff') format('woff'),
+    url('../fonts/woodland/PPWoodland-Heavy.ttf') format('truetype');
+}
+
+
+/* Details: Countdown */
+
+
+#DateCountdown {
+  margin-bottom: 30px;
+}
+
+.details h3 {
+  font-family: 'woodland', Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: clamp(1.5em, 2.25vw, 3em);
+  margin: 0 auto;
+}
+
+.details sectio
+
+/* Details: Countdown */
+#DateCountdown {
+  margin-bottom: 30px;
+}
+
+#details h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#details section {
+  height: auto;
+}
+
+.time_circles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.time_circles>div {
+  position: absolute;
+  text-align: center
+}
+
+.time_circles>div>h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-sans);
+}
+
+.time_circles>div>span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 300%;
+  margin-top: .4em;
+  color: #444;
+}
+
+
+
+#DateCountdown {
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+
+#details h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.time_circles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.time_circles>div {
+  position: absolute;
+  text-align: center;
+}
+
+.time_circles>div>h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-sans);
+}
+
+.time_circles>div>span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 300%;
+  margin-top: .4em;
+  color: #fff;
+
+}
+
+/* 
+@media (max-width: 768px) {
+  #DateCountdown {
+    border: 1px solid red;
+  }
+} */
+
+
+body {
+  background-image: radial-gradient(circle at 1.76% 2.76%,
+      #0c1b28,
+      transparent 80%),
+    radial-gradient(circle at 99.3% 98.84%, #dd9b5a, transparent 50%),
+    radial-gradient(circle at 64.52% 46.01%, #427989, transparent 52%),
+    radial-gradient(circle at 28.96% 80.99%, #427989, transparent 100%),
+    radial-gradient(circle at 63.73% 13.79%, #127541, transparent 54%),
+    radial-gradient(circle at 92.61% 59.22%, #f1ce79, transparent 35%),
+    radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+  background-attachment: fixed;
+}
+
+body {
+  background-color: rgb(0 0 0 / 1);
+  color: rgb(255 255 255 / 0.8);
+}
+
+.comingsoon-wrapper {
+  /* background: rgb(255 0 0 /.2); */
+  height: 100%;
+  padding: 5%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-comingsoon h1 {
+  /* font-size: 7em;
+  font-size: 7.25vw; */
+  font-size: clamp(3em, 7.25vw, 6em);
+  line-height: 1;
+  font-weight: normal;
+  /* max-width: 40vw; */
+}
+
+@media (min-width:768px) {
+  .hero-comingsoon h1 {
+    /* max-width: 40vw; */
+  }
+}
+@media (min-width:1000px) {
+  .hero-comingsoon h1 {
+    max-width: 41vw;
+  }
+}
+
+.hero-comingsoon h2 {
+  font-size: 1.6em;
+}
+
+.hero-comingsoon h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.hero-comingsoon h2,
+.hero-comingsoon h3 {
+  text-align: left;
+  line-height: .75;
+  font-weight: normal;
+}
+
+.badge {
+  background-color: teal;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  padding: 1em 1.5em;
+}
+
+.badge2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em 1.5em;
+  text-align: right;
+}
+
+.badge2 h2 {
+  font-size: 1.5em;
+}
+
+/* TYOPGRAPHIC MAP */
+.topographic-map-pattern {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.topographic-map-pattern img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SECTIONS */
+header, footer {
+  padding: 1em;
+  text-align: center;
+}
+
+/* RESETS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* SOCIAL MEDIA ICONS */
+.socialmedia {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.socialmedia li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+.socialmedia svg {
+  width: 25px;
+  height: 25px;
+  fill: rgb(255 255 255 / .8);
+  /* border: 1px solid rgb(255 255 255 / .8);
+  padding: 5px;
+  border-radius: 100%; */
+}
+
+.socialmedia a:hover svg {
+  fill: rgb(255 255 255 / 1);
+}

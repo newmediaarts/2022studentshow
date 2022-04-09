@@ -9,3 +9,4 @@ NMA Student Show Website 2022
 * [UI Test #5, coming soon, save-the-date + countdown](https://newmediaarts.github.io/2022studentshow/prototypes/test5/)
 * [UI Test #6, coming soon, save-the-date + countdown](https://newmediaarts.github.io/2022studentshow/prototypes/test6/)
 * [UI Test #7, coming soon, save-the-date + countdown](https://newmediaarts.github.io/2022studentshow/prototypes/test7/)
+* [UI Test #8, coming soon, save-the-date + countdown](https://newmediaarts.github.io/2022studentshow/prototypes/test8/)
