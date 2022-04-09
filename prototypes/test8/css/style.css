@@ -481,7 +481,7 @@ section {
   line-height: .8;
   font-weight: normal;
   /* max-width: 40vw; */
-  margin: 0.4em 0 0 0;
+  margin: 0.5em 0 0 0;
   animation-name: fadein;
   animation-duration: 1s;
   animation-timing-function: linear;
