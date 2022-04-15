@@ -11,4 +11,4 @@ NMA Student Show Website 2022
 * [UI Test #7, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test7/)
 * [UI Test #8, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test8/)
 * [UI Test #9, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test9/)
-<!-- * [UI Test #10, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test10/) -->
+* [UI Test #10, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test10/)
