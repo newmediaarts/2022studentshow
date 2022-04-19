@@ -49,4 +49,26 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }
     // start the text animation
     StartTextAnimation(0);
+
+    // RELOAD THE  PAGE ON MOBILE DEVICE ORIENTATION CHANGE
+
+    window.addEventListener('resize', refreshThePage);
+
+    function isiPhone(){
+        return (
+            //Detect iPhone
+            //var isiPad = navigator.userAgent.match(/iPad/i) != null;
+            (navigator.platform.indexOf("iPhone") != -1) ||
+            //Detect iPod
+            (navigator.platform.indexOf("iPad") != -1)
+        );
+    }
+    
+
+    function refreshThePage() {
+        if(isiPhone()){
+            location.reload();
+        }
+    };
+
 });
