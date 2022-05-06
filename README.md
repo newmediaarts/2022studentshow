@@ -1,7 +1,11 @@
 # 2022studentshow
 NMA Student Show Website 2022
 
-## Test Prototypes:
+## FINAL VERSIONS
+* [FINAL Coming Soon](https://newmediaarts.github.io/2022studentshow/comingsoon/)
+* Final Launched Website [in progress)]
+
+## Test Prototypes for the Base + Coming Soon:
 * [UI Test #1, simple single page site](https://newmediaarts.github.io/2022studentshow/prototypes/test01/)
 * [UI Test #2, simple single page site](https://newmediaarts.github.io/2022studentshow/prototypes/test02/)
 * [UI Test #3, simple single page site w/ webfonts ](https://newmediaarts.github.io/2022studentshow/prototypes/test03/)
@@ -13,3 +17,7 @@ NMA Student Show Website 2022
 * [UI Test #9, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test09/)
 * [UI Test #10, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test10/)
 <!-- * [UI Test #10, coming soon, save-the-date](https://newmediaarts.github.io/2022studentshow/prototypes/test11/) -->
+
+## Test Prototypes for the Launched Website
+
+* [UI Test #20-website](https://newmediaarts.github.io/2022studentshow/prototypes/test20-website/)
