@@ -448,6 +448,53 @@ section {
   padding: var(--spacing-unit);
 }
 
+/* SECTIONS - STUDENT OFFICES */
+.student-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 1px solid blue;
+}
+
+.student-name-header {
+  font-family: 'woodland';
+  font-size: 8vh;
+}
+
+.links {
+  display: inline-block;
+  padding: 1em .5em;
+}
+
+.project-grid {
+  display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 6vw);
+        grid-gap: 35px;
+        border: 1px solid red;
+}
+
+.project-small {
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+
+.project-medium {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.project-large {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+
 /* HERO */
 .hero {
   grid-area: hero;
@@ -640,7 +687,7 @@ section {
   font-size: .6em;
 }
 
-/* Details: Countdown */
+/* Details: Countdown
 #DateCountdown {
   margin-bottom: 30px;
 }
@@ -724,7 +771,7 @@ section {
   font-size: 300%;
   margin-top: .4em;
   color: #fff;
-}
+} */
 
 /* 
 @media (max-width: 768px) {
