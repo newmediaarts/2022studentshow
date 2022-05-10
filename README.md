@@ -25,3 +25,4 @@ NMA Student Show Website 2022
 * [UI Test #25-website](https://newmediaarts.github.io/2022studentshow/prototypes/test25-website/)
 * [UI Test #26-website](https://newmediaarts.github.io/2022studentshow/prototypes/test26-website/)
 * [UI Test #27-website](https://newmediaarts.github.io/2022studentshow/prototypes/test27-website/)
+* [UI Test #30-website](https://newmediaarts.github.io/2022studentshow/prototypes/test30-website/)
