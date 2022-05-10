@@ -1,6 +1,6 @@
 body {
-  --color-body-backround: #fcf8f3;
-  --color-body-text: rgb(255 255 255 / .8);
+  --color-body-backround: rgb(234, 228, 220);
+  --color-body-text: rgba(3, 3, 3, 0.8);
   --color-body-text-hover: rgb(255 255 255 / 1);
   --font-sans: 'degular', 'Acumin', sans-serif;
   --font-serif: 'Times New Roman', serif;
@@ -547,7 +547,7 @@ section {
 .student-avatar-wrapper img {
   display: block;
   border-radius: 100%;
-  max-width: 100px;
+  max-width: 150px;
 }
 
 .student-name-wrapper {
@@ -564,6 +564,8 @@ section {
 .student-name-wrapper h4 {
   line-height: 1;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 .student-links-wrapper {
@@ -605,23 +607,28 @@ section {
 .project-grid img,
 .project-grid video {
   display: block;
-  border: 0.5vw solid rgb(222, 222, 222);
+  border: 0.5vw solid rgb(252, 250, 250);
 }
 
 .project-large {
   grid-column: 2 / 10;
   grid-row: 1 / 6;
+  /* box-shadow: 5px 5px 20px rgb(156, 156, 156); */
 }
+
 
 .project-small {
   grid-column: 1 / 3;
   grid-row: 3 / 5;
+  /* box-shadow: 5px 5px 20px rgb(156, 156, 156); */
 }
 
 .project-medium {
   grid-column: 8 / 11;
   grid-row: 2 / 6;
+  /* box-shadow: 5px 5px 20px rgb(156, 156, 156); */
 }
+
 
 /* .project-grid {
   display: grid;
