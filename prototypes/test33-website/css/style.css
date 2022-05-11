@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
 }
 
+
 html,
 body {
   height: 100%;
@@ -98,9 +99,6 @@ p {
 span {
   font-family: var(--font-sans);
   text-transform: uppercase;
-}
-.hanging{
-  margin-left: -10px;
 }
 
 /* TYPE UTILITY CLASSES */
