@@ -101,6 +101,13 @@ span {
   text-transform: uppercase;
 }
 
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; 
+  visibility: hidden;
+}
+
 /* TYPE UTILITY CLASSES */
 .woodland-ultralight,
 .woodland-light,
