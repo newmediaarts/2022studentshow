@@ -37,3 +37,4 @@ NMA Student Show Website 2022
 * [UI Test #39-website](https://newmediaarts.github.io/2022studentshow/prototypes/test39-website/)
 * [UI Test #40-website](https://newmediaarts.github.io/2022studentshow/prototypes/test40-website/)
 * [UI Test #41-website](https://newmediaarts.github.io/2022studentshow/prototypes/test41-website/)
+* [UI Test #42-website](https://newmediaarts.github.io/2022studentshow/prototypes/test42-website/)
