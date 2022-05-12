@@ -1162,23 +1162,7 @@ section {
 }
 
 
-/* COMING SOON BADGES */
-.badge {
-  background-color: teal;
-  position: absolute;
-  top: 3%;
-  left: 0;
-  padding: .5em 1.5em .8em 1em;
-  animation-name: enterfromleft;
-  animation-duration: .3s;
-  animation-timing-function: ease-out;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
-  transform: translateX(-100%);
-  clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 99%, 0 0);
-}
-
-
+/* BADGES */
 .badge2 {
   position: absolute;
   bottom: 0;
@@ -1246,14 +1230,14 @@ section {
 .socialmedia svg {
   width: 20px;
   height: 20px;
-  fill: rgb(255 255 255 / .8);
+  /* fill: rgb(255 255 255 / .8); */
   /* border: 1px solid rgb(255 255 255 / .8);
   padding: 5px;
   border-radius: 100%; */
 }
 
 .socialmedia a:hover svg {
-  fill: rgb(255 255 255 / 1);
+  /* fill: rgb(255 255 255 / 1); */
 }
 
 /* ANIMATION */
