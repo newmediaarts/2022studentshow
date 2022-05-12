@@ -716,6 +716,7 @@ section {
 .student-memoji-grid h2 {
   text-align: center;
   margin: 0 auto 1em auto;
+  font-size: clamp(1em, 3vw, 1.5em);
 }
 
 .student-memoji-grid a {
