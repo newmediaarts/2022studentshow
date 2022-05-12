@@ -34,10 +34,12 @@ body {
 
 a {
   color: var(--color-body-text);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--color-body-text-hover);
+  text-decoration: underline;
 }
 
 img,
@@ -415,7 +417,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 5vh 5vw;
-  min-height: 80vh;
+  min-height: 100vh;
   position: relative;
   color: white;
   padding-bottom: 30vh;
@@ -625,7 +627,7 @@ section {
 
 .videoWrapper {
   max-width: 1400px;
-  margin: -25vh auto 0 auto;
+  margin: -35vh auto 0 auto;
 }
 
 /* STUDENT MEMOJI SECTION */
