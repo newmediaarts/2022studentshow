@@ -459,8 +459,8 @@ section {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 5vh 5vw;
-  min-height: 90vh;
+  padding: 8em 5vw 0 5vw;
+  min-height: 100vh;
   position: relative;
   color: white;
   padding-bottom: 30vh;
@@ -496,7 +496,7 @@ section {
 }
 
 .hero .hero-container {
-  padding: 3vh 0 0 0;
+  padding: 3vh 0;
 }
 
 @media (min-width: 768px) {
@@ -504,8 +504,10 @@ section {
     grid-area: hero;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     text-align: left;
-    min-height: 120vh;
+    min-height: 130vh;
+    padding: 15vh 5vw 0 5vw;
   }
   .hero .hero-container {
     width: 50vw;
@@ -678,12 +680,12 @@ section {
   /* max-width: 1400px; */
   padding: 5vh 5vw;
   position: relative;
-  margin: -40vh auto 0 auto;
+  margin: -35vh auto 0 auto;
 }
 
 @media (min-width: 768px) {
   .video {
-    margin: calc(-65vh + 15vw) auto 0 auto;
+    margin: calc(-100vh + 20vw) auto 0 auto;
   }
 }
 
