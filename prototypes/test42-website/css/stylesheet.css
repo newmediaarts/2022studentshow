@@ -1278,6 +1278,15 @@ section {
 .about {
   padding-top: 8em;
 }
+.about h1 {
+  font-size: clamp(2.5em, 4vw, 4.25em);
+}
+.about h2 {
+  font-size: clamp(1.5em, 2vw, 2.625em);
+}
+.about h3 {
+  font-size: clamp(1.25em, 1.5vw, 1.625em);
+}
 /* CREDITS SECTION */
 .macron {
   position: relative;
