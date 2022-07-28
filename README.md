@@ -3,7 +3,7 @@ NMA Student Show Website 2022
 
 ## FINAL VERSIONS
 * [FINAL Coming Soon](https://newmediaarts.github.io/2022studentshow/comingsoon/)
-* Final Launched Website [in progress)]
+* [FINAL Site (v42)](https://newmediaarts.github.io/2022studentshow/prototypes/test42-website/)
 
 ## Test Prototypes for the Base + Coming Soon:
 * [UI Test #1, simple single page site](https://newmediaarts.github.io/2022studentshow/prototypes/test01/)
